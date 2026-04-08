@@ -469,6 +469,7 @@ body { font-family: "DM Sans", sans-serif; background: var(--bg); color: var(--t
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 200px 200px;
+  grid-auto-rows: 200px;
   gap: 10px;
   margin-bottom: 1rem;
 }
@@ -1305,6 +1306,15 @@ body.lang-zh .en { display: none; }
         <div class="masonry-cap zh">我最喜欢的一张个人照</div>
       </div>
     </div>
+    <div class="masonry-item" style="grid-column: span 3;" onclick="openPhotoLightbox(11)">
+      <img src="photos/DSC03883.jpg" alt="Spring Bloom">
+      <div class="masonry-overlay">
+        <div class="masonry-loc en">🌸 Wuxi, China, Spring 2026</div>
+        <div class="masonry-loc zh">🌸 中国无锡 · 2026年4月</div>
+        <div class="masonry-cap en">Where flowers bloom, we gather</div>
+        <div class="masonry-cap zh">有花的地方，有人，有我，有我们</div>
+      </div>
+    </div>
   </div>
 
   <!-- Stargazing Section -->
@@ -1830,6 +1840,7 @@ var photoData = [
   { src: "photos/IMG_4492.JPG", titleEn: "Total Lunar Eclipse · Phase 3 — Recovery", titleZh: "月全食 · 第三阶段 — 复圆", descEn: "The moon slowly emerges from shadow, brightness returning frame by frame. Worth every sleepless minute. 03:30–04:00.", descZh: "月亮缓缓从阴影中重现，亮度一帧一帧地回来。每一个不眠的分钟都值得。凌晨03:30–04:00。" },
   { src: "photos/DSC04324.jpg", titleEn: "First Night Sky · Algonquin Park", titleZh: "第一次拍星空 · 阿岗昆公园", descEn: "Near the Mid-Autumn Festival full moon — too bright for the Milky Way, but the stars still appeared above the autumn maples. My very first attempt at astrophotography.", descZh: "邻近中秋满月，月光太强没拍出银河，但秋枫上方的星星还是出来了。我的第一次星空摄影。" },
   { src: "photos/IMG_5637.JPG", titleEn: "Banff National Park · Christmas 2025", titleZh: "班芙国家公园 · 2025年圣诞", descEn: "Standing on a snowy bridge in Banff with my Sony camera — one of my favourite photos of myself. The mountains, the frozen river, the winter light. Perfect.", descZh: "站在班芙雪桥上，手持Sony相机，这是我最喜欢的一张个人照。雪山、冰河、冬日光线，刚刚好。" },
+  { src: "photos/DSC03883.jpg", titleEn: "Where There Are Flowers · Spring 2026", titleZh: "有花的地方 · 2026年4月", descEn: "Where flowers bloom, people gather — and there I was, among them. A quiet April afternoon that felt whole.", descZh: "有花的地方，有人，有我，有我们。" },
 ];
 
 var currentPhotoIdx = 0;
